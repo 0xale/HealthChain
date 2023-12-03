@@ -1,7 +1,15 @@
 import React from "react";
 import HeroIcon from "../assets/react.svg";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const nevigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    // Redirect to the dashboard component
+    nevigate("/dashboard");
+  };
+
   return (
     <section className="dark:bg-gray-800 dark:text-gray-100">
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
@@ -16,8 +24,8 @@ function Hero() {
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <a
               rel="noopener noreferrer"
-              href="#"
               className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900"
+              onClick={handleGetStartedClick}
             >
               Get Started
             </a>
