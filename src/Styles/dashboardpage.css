@@ -1,0 +1,44 @@
+/* Style for the dashboard container */
+.db-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the registration card */
+.rg-card {
+
+    padding: 20px;
+    text-align: center;
+    background: rgba(31, 41, 55, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Style for the heading in the registration card */
+.rg-card h3 {
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+/* Style for the registration button */
+.rg-btn {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Hover effect for the registration button */
+.rg-btn:hover {
+    background-color: #2a65c9;
+}

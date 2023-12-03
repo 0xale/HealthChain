@@ -1,6 +1,7 @@
 import React from "react";
 import HeroIcon from "../assets/react.svg";
 import { useNavigate } from "react-router-dom";
+import "../Styles/Hero.css";
 
 function Hero() {
   const nevigate = useNavigate();
@@ -24,7 +25,7 @@ function Hero() {
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <a
               rel="noopener noreferrer"
-              className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900"
+              className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900 get-start-btn"
               onClick={handleGetStartedClick}
             >
               Get Started
